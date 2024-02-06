@@ -1,0 +1,139 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.star-icon {
+    height: max-content;
+    width: max-content;
+}
+
+.outer-container {
+    height: 562px;
+    width: 562px;
+    background: radial-gradient(circle at top, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    border-radius: 3cap;
+    margin: auto;
+    position: relative;
+    top: 50px;
+}
+
+
+.inner-container {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+}
+
+h3 {
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    line-height: 1.25;
+    font-size: x-large;
+}
+
+h2 {
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 10%; 
+}
+
+.rating-div {
+    background-color:hsl(213, 19%, 18%);
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+}
+
+.rating-div:hover {
+    background-color: hsl(217, 12%, 63%);
+    }
+    /* Style for the divs in active state */
+    .active {
+        background-color: hsl(25, 97%, 53%);
+    }
+
+.rating-div:hover h2, .rating-div.active h2 {
+    color: white;
+}
+
+.submit-container {
+    background-color: hsl(25, 97%, 53%);
+    text-align: center;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.submit-container:hover {
+    background-color: white;
+}
+.submit {
+    color: hsl(0, 0%, 100%);
+}
+.submit-container:hover h2 {
+    color: hsl(25, 97%, 53%);
+}
+#wrapper {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.TYicon-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.5);
+    margin: 10%;
+}
+
+.selection-div {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 40px;
+    width: 243px;
+}
+#selection-text {
+    font-size: large;
+    margin: 0;
+    padding: 5%;
+    text-align: center;
+    color: hsl(25, 97%, 53%);
+}
+
+.appreciation-text {
+    text-align: center;
+    padding-top: 2%;
+    padding: 5%;    
+    margin-top: 0px;
+
+
+}
+
+.attribution {
+    position:fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+a {
+    color: white;
+
+}
